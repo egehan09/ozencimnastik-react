@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* splash screen */
+
+.intro {
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 2s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 10%;
+    transform: translate(-50% -50%);
+    color: #ffff;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo:nth-child(2) {
+    margin-top: 3rem;
+    margin-right: 20%;
+}
+
+.logo:not(img) {
+    text-align: left;
+}
+
+.logo:nth-child(3) {
+    margin-left: 20%;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.landing-logo {
+    width: 20%;
+    height: 20%;
+}
+
+.index-div {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:1350px) {
+    .landing-logo {
+        width: 15%;
+        height: 15%;
+    }
+
+    .logo-header {
+        top: 15%;
+    }
+
+}
+
+@media screen and (max-width:1250px) {
+    .landing-logo {
+        width: 20%;
+        height: 20%;
+    }
+
+    .logo-header {
+        top: 20%;
+    }
+
+}
+
+@media screen and (max-width:1150px) {
+    .landing-logo {
+        width: 25%;
+        height: 25%;
+    }
+
+    .logo-header {
+        top: 25%;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .landing-logo {
+        width: 30%;
+        height: 30%;
+    }
+
+    .logo-header {
+        top: 30%;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+    .logo {
+        font-size: 36px;
+    }
+
+    .landing-logo {
+        width: 35%;
+        height: 35%;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .landing-logo {
+        width: 40%;
+        height: 40%;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .logo-header {
+        top: 30%;
+    }
+
+}
+
+@media screen and (max-width:350px) {
+    .landing-logo {
+        width: 45%;
+        height: 45%;
+    }
+
+    .logo-header {
+        top: 35%;
+    }
+
+}
